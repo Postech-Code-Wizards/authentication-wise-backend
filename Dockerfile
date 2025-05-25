@@ -3,9 +3,9 @@ FROM maven:3.9.9-amazoncorretto-21-alpine AS build
 
 WORKDIR /app
 
-COPY mvnw . 
-COPY .mvn .mvn 
-COPY pom.xml . 
+COPY mvnw .
+COPY .mvn .mvn
+COPY pom.xml .
 
 # copia arquivos de configuração maven
 RUN chmod +x ./mvnw
